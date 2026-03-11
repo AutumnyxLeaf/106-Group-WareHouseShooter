@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Right to Return Arms")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+feec20159ae1858d04f5aaf7d37795103ad6add7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6cff50672178d518f85e627505b4a432baffd43a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Right to Return Arms")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Right to Return Arms")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
