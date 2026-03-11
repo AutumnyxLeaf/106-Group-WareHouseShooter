@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\thbar\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\Right to Return Arms.csproj": {}
+    "C:\\Users\\etdd5\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\Right to Return Arms.csproj": {}
   },
   "projects": {
-    "C:\\Users\\thbar\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\Right to Return Arms.csproj": {
+    "C:\\Users\\etdd5\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\Right to Return Arms.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thbar\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\Right to Return Arms.csproj",
+        "projectUniqueName": "C:\\Users\\etdd5\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\Right to Return Arms.csproj",
         "projectName": "Right to Return Arms",
-        "projectPath": "C:\\Users\\thbar\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\Right to Return Arms.csproj",
-        "packagesPath": "C:\\Users\\thbar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thbar\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\obj\\",
+        "projectPath": "C:\\Users\\etdd5\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\Right to Return Arms.csproj",
+        "packagesPath": "C:\\Users\\etdd5\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\etdd5\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\thbar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\etdd5\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
