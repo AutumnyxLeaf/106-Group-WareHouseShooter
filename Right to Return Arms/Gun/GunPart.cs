@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Right_to_Return_Arms.Gun
 {
+    /// <summary>
+    /// A Enum representing the parts of the Gun
+    /// </summary>
     enum GunPartID
     {
         STOCK,
