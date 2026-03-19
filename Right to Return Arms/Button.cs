@@ -1,19 +1,22 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Input;
 
 namespace Right_to_Return_Arms
 {
+
+    
     internal class Button
     {
         // Fields
 
         private Rectangle _posRect;
-        private Texture2D texture;
+        private Texture2D _texture;
 
         // Properties
 
@@ -51,7 +54,7 @@ namespace Right_to_Return_Arms
         {
             X = x;
             Y = y;
-            this.texture = texture;
+            _texture = texture;
             _posRect = new Rectangle(x, y, 100, 50);
         }
 
@@ -63,13 +66,25 @@ namespace Right_to_Return_Arms
         {
             X = x;
             Y = y;
-            this.texture = texture;
+            _texture = texture;
             _posRect = new Rectangle(x, y, width, height);
         }
             
         // Methods
 
+        public void Draw(SpriteBatch sb)
+        {
+            sb.Draw(_texture, _posRect, Color.White);
+        }
 
+        public bool mouseIntersects(MouseState ms)
+        {
+            if(_posRect.Contains(ms.X, ms.Y))
+            {
+                return true;
+            }
+            return false;
+        }
 
     }
 }
