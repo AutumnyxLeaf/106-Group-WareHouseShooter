@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\etdd5\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\",
+  "WorkspaceRootPath": "F:\\DSA\\106-Group-WareHouseShooter\\Right to Return Arms\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8B45F8A7-BCE5-4667-ACA5-51AB4EB62062}|Right to Return Arms.csproj|c:\\users\\etdd5\\onedrive\\desktop\\106-group-warehouseshooter\\right to return arms\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8B45F8A7-BCE5-4667-ACA5-51AB4EB62062}|Right to Return Arms.csproj|f:\\dsa\\106-group-warehouseshooter\\right to return arms\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8B45F8A7-BCE5-4667-ACA5-51AB4EB62062}|Right to Return Arms.csproj|solutionrelative:game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -21,6 +21,10 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Button.cs",
@@ -28,7 +32,7 @@
               "RelativeDocumentMoniker": "Button.cs",
               "ToolTip": "C:\\Users\\etdd5\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\Button.cs",
               "RelativeToolTip": "Button.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAGIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T23:04:08.004Z",
               "EditorCaption": ""
@@ -37,11 +41,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Game1.cs",
-              "DocumentMoniker": "C:\\Users\\etdd5\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\Game1.cs",
+              "DocumentMoniker": "F:\\DSA\\106-Group-WareHouseShooter\\Right to Return Arms\\Game1.cs",
               "RelativeDocumentMoniker": "Game1.cs",
-              "ToolTip": "C:\\Users\\etdd5\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\Game1.cs",
+              "ToolTip": "F:\\DSA\\106-Group-WareHouseShooter\\Right to Return Arms\\Game1.cs",
               "RelativeToolTip": "Game1.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAAALAAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-06T16:57:10.431Z",
               "EditorCaption": ""
