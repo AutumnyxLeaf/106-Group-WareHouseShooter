@@ -28,6 +28,8 @@ namespace Right_to_Return_Arms
         private GameState _gameState;
         // Previous mouse state
         private MouseState _previousMouseState;
+        // Previous Keyboard state
+        private KeyboardState _previousKeyboardState;
 
         // Temporary UI variables that can be moved to manager later
         
@@ -37,7 +39,6 @@ namespace Right_to_Return_Arms
         Button _highscoresBut;
 
         // Pause Screen vars
-        Button _resumeBut;
         Button _menuBut; // Menu Button will likely be reused;
 
         // Game Over vars
@@ -72,16 +73,14 @@ namespace Right_to_Return_Arms
             _startBut = new Button(350, 100, Content.Load<Texture2D>("Start Button"));
             _highscoresBut = new Button(350, 200, Content.Load<Texture2D>("Highscore Button"));
             _closeGameBut = new Button(350, 300, Content.Load<Texture2D>("Exit Button"));
-            
+            _menuBut = new Button(50, 50, Content.Load<Texture2D>("Menu Button"));
         }
 
         protected override void Update(GameTime gameTime)
         {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
-                Exit();
-
             // Finite state machine, can be moved to manager later
             MouseState ms = Mouse.GetState();
+            KeyboardState kb = Keyboard.GetState();
             switch (_gameState)
             {
                 case GameState.Title:
@@ -99,7 +98,10 @@ namespace Right_to_Return_Arms
                     }
                         break;
                 case GameState.Pause:
-
+                    if (_menuBut.mouseIntersects(ms) && SingleMouseClick())
+                    {
+                        _gameState = GameState.Title;
+                    }
                     break;
                 case GameState.ItemPickup:
 
@@ -111,9 +113,14 @@ namespace Right_to_Return_Arms
 
                     break;
                 case GameState.Game:
-
+                    if (SingleKeyPress(Keys.Escape))
+                    {
+                        _gameState = GameState.Pause;
+                    }
                     break;
             }
+            _previousMouseState = ms;
+            _previousKeyboardState = kb;
 
             base.Update(gameTime);
         }
@@ -133,7 +140,10 @@ namespace Right_to_Return_Arms
                     _highscoresBut.Draw(_spriteBatch);
                     break;
                 case GameState.Pause:
-
+                    // Overlaying dark screen
+                    _spriteBatch.Draw(Content.Load<Texture2D>("Transparent Black Screen"),
+                        new Vector2(0, 0), Color.White);
+                    _menuBut.Draw(_spriteBatch);
                     break;
                 case GameState.ItemPickup:
 
@@ -145,7 +155,7 @@ namespace Right_to_Return_Arms
 
                     break;
                 case GameState.Game:
-
+                    
                     break;
             }
 
@@ -162,6 +172,11 @@ namespace Right_to_Return_Arms
         {
             return (Mouse.GetState().LeftButton == ButtonState.Pressed) && 
                 _previousMouseState.LeftButton == ButtonState.Released;
+        }
+
+        private bool SingleKeyPress(Keys key)
+        {
+            return Keyboard.GetState().IsKeyDown(key) && _previousKeyboardState.IsKeyUp(key);
         }
 
     }
