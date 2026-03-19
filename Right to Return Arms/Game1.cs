@@ -68,7 +68,10 @@ namespace Right_to_Return_Arms
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            
+            // Creating buttons
+            _startBut = new Button(100, 100, Content.Load<Texture2D>("Base Button"));
+            _closeGameBut = new Button(100, 200, Content.Load<Texture2D>("Base Button"));
+
         }
 
         protected override void Update(GameTime gameTime)
@@ -115,6 +118,29 @@ namespace Right_to_Return_Arms
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             _spriteBatch.Begin();
+
+            // Likely to be moved into 
+            switch (_gameState)
+            {
+                case GameState.Title:
+
+                    break;
+                case GameState.Pause:
+
+                    break;
+                case GameState.ItemPickup:
+
+                    break;
+                case GameState.GameOver:
+
+                    break;
+                case GameState.HighScores:
+
+                    break;
+                case GameState.Game:
+
+                    break;
+            }
 
             _spriteBatch.End();
 
