@@ -102,7 +102,11 @@ namespace Right_to_Return_Arms
                     {
                         _gameState = GameState.Title;
                     }
-                    break;
+                    else if (SingleKeyPress(Keys.Escape))
+                    {
+                        _gameState = GameState.Game;
+                    }
+                        break;
                 case GameState.ItemPickup:
 
                     break;

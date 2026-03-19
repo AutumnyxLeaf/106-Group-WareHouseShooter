@@ -20,6 +20,9 @@ namespace Right_to_Return_Arms
 
         // Properties
 
+        /// <summary>
+        /// X position of the Button
+        /// </summary>
         public int X
         {
             get
@@ -33,6 +36,9 @@ namespace Right_to_Return_Arms
             }
         }
 
+        /// <summary>
+        /// Y position of the Button
+        /// </summary>
         public int Y
         {
             get
@@ -72,8 +78,23 @@ namespace Right_to_Return_Arms
             
         // Methods
 
+        /// <summary>
+        /// Draws the button on screen
+        /// </summary>
+        /// <param name="sb">Sprite batch used for the draw</param>
         public void Draw(SpriteBatch sb)
         {
+            sb.Draw(_texture, _posRect, Color.White);
+        }
+
+        /// <summary>
+        /// Draws the button on screen and places it at a specified point
+        /// </summary>
+        /// <param name="sb">Sprite batch used for the draw</param>
+        public void Draw(SpriteBatch sb, int x, int y)
+        {
+            X = x;
+            Y = y;
             sb.Draw(_texture, _posRect, Color.White);
         }
 
