@@ -110,7 +110,10 @@ namespace Right_to_Return_Arms
 
                     break;
                 case GameState.HighScores:
-
+                    if(_menuBut.mouseIntersects(ms) && SingleMouseClick())
+                    {
+                        _gameState = GameState.Title;
+                    }
                     break;
                 case GameState.Game:
                     if (SingleKeyPress(Keys.Escape))
@@ -152,7 +155,7 @@ namespace Right_to_Return_Arms
 
                     break;
                 case GameState.HighScores:
-
+                    _menuBut.Draw(_spriteBatch);
                     break;
                 case GameState.Game:
                     
@@ -167,13 +170,18 @@ namespace Right_to_Return_Arms
         /// <summary>
         /// Helper method to check if the mouse has been pressed for a single turn
         /// </summary>
-        /// <returns></returns>
+        /// <returns>True if the mouse was pressed onnce, false otherwise</returns>
         private bool SingleMouseClick()
         {
             return (Mouse.GetState().LeftButton == ButtonState.Pressed) && 
                 _previousMouseState.LeftButton == ButtonState.Released;
         }
 
+        /// <summary>
+        /// Helper method to see if a key was pressed once and not held
+        /// </summary>
+        /// <param name="key">Key to check</param>
+        /// <returns>True if the key was pressed once, false otherwise</returns>
         private bool SingleKeyPress(Keys key)
         {
             return Keyboard.GetState().IsKeyDown(key) && _previousKeyboardState.IsKeyUp(key);
