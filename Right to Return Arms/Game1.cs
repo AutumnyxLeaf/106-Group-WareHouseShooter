@@ -69,9 +69,10 @@ namespace Right_to_Return_Arms
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // Creating buttons
-            _startBut = new Button(100, 100, Content.Load<Texture2D>("Base Button"));
-            _closeGameBut = new Button(100, 200, Content.Load<Texture2D>("Base Button"));
-
+            _startBut = new Button(350, 100, Content.Load<Texture2D>("Start Button"));
+            _highscoresBut = new Button(350, 200, Content.Load<Texture2D>("Highscore Button"));
+            _closeGameBut = new Button(350, 300, Content.Load<Texture2D>("Exit Button"));
+            
         }
 
         protected override void Update(GameTime gameTime)
@@ -87,6 +88,10 @@ namespace Right_to_Return_Arms
                     if (_startBut.mouseIntersects(ms) && SingleMouseClick())
                     {
                         _gameState = GameState.Game;
+                    }
+                    else if(_highscoresBut.mouseIntersects(ms) && SingleMouseClick())
+                    {
+                        _gameState = GameState.HighScores;
                     }
                     else if (_closeGameBut.mouseIntersects(ms) && SingleMouseClick())
                     {
@@ -123,7 +128,9 @@ namespace Right_to_Return_Arms
             switch (_gameState)
             {
                 case GameState.Title:
-
+                    _startBut.Draw(_spriteBatch);
+                    _closeGameBut.Draw(_spriteBatch);
+                    _highscoresBut.Draw(_spriteBatch);
                     break;
                 case GameState.Pause:
 
