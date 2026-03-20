@@ -6,12 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GameObjectTesting
+namespace Right_to_Return_Arms
 {
     public enum CollisionTags
     {
         Default,
-        Test
+        Bullet,
+        Wall,
+        Player
     }
 
     internal class GameObject
@@ -50,7 +52,7 @@ namespace GameObjectTesting
             {
                 // if the requested velocity is greater than the max velocity,
                 // then keep the direction but set the magnitued to the max velo
-                if (value.Length() > maxVelo)
+                if (Math.Abs(maxVelo) > maxVelo)
                 {
                     value.Normalize();
 
@@ -66,6 +68,11 @@ namespace GameObjectTesting
         public Vector2 VelocityDirection { 
             get
             {
+                if (velocity == Vector2.Zero)
+                {
+                    return Vector2.Zero;
+                }
+                
                 // Save the old velocity
                 Vector2 oldVelo = new Vector2(velocity.X, velocity.Y);
 
@@ -80,9 +87,19 @@ namespace GameObjectTesting
             }
             set
             {
+                if (value == Vector2.Zero)
+                {
+                    Velocity = Vector2.Zero;
+                    return;
+                }
+                else if (Velocity == Vector2.Zero)
+                {
+                    Velocity = Vector2.One;
+                }
+
                 // Makes a vector with the direction of the value passed, then mulitpies it by the length
-                value.Normalize();
-                velocity = new Vector2(value.X, value.Y) * velocity.Length();
+                value.Normalize(); 
+                velocity = value * velocity.Length();
             }
         }
 
@@ -106,7 +123,7 @@ namespace GameObjectTesting
             {
                 // if the requested velocity is greater than the max velocity,
                 // then keep the direction but set the magnitued to the max velo
-                if (value.Length() > maxAccel)
+                if (Math.Abs(maxAccel) > maxAccel)
                 {
                     float length = value.Length();
 
@@ -309,15 +326,24 @@ namespace GameObjectTesting
             }
         }
 
+        /// <summary>
+        /// Updates the positon of the game object
+        /// </summary>
         public void Update()
         {
             // Add acceleration
-            Velocity = new Vector2(velocity.X + acceration.X, velocity.Y + acceration.Y);
+            Velocity = new Vector2((int)(velocity.X + acceration.X), (int)(velocity.Y + acceration.Y));
 
             // Set position
             transform.Location = new Point((int)(transform.X + velocity.X), (int)(transform.Y + velocity.Y));
         }
 
-
+        public int RoundDownToNextInt(float value) 
+        {
+            // Get the decimal component of value
+            float dec = value % 1;
+            
+            return (int)(value - dec);
+        }
     }
 }
