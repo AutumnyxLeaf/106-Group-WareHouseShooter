@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Right_to_Return_Arms.Gun
+namespace Right_to_Return_Arms.GunClasses
 {
     /// <summary>
     /// The stat's of the gun that can be upgraded
@@ -35,6 +35,15 @@ namespace Right_to_Return_Arms.Gun
         {
             _modifier = modifier;
             _gunStat = gunStat;
+        }
+
+        public override string ToString()
+        {
+            string toString = "";
+
+            toString = $"{_gunStat.ToString()} -> {_modifier}";
+
+            return toString;
         }
     }
 }

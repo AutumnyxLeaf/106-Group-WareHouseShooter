@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\thbar\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8B45F8A7-BCE5-4667-ACA5-51AB4EB62062}|Right to Return Arms.csproj|c:\\users\\thbar\\onedrive\\desktop\\106-group-warehouseshooter\\right to return arms\\content\\debugfont.spritefont||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{8B45F8A7-BCE5-4667-ACA5-51AB4EB62062}|Right to Return Arms.csproj|solutionrelative:content\\debugfont.spritefont||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B45F8A7-BCE5-4667-ACA5-51AB4EB62062}|Right to Return Arms.csproj|c:\\users\\thbar\\onedrive\\desktop\\106-group-warehouseshooter\\right to return arms\\gunclasses\\gunpart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B45F8A7-BCE5-4667-ACA5-51AB4EB62062}|Right to Return Arms.csproj|solutionrelative:gunclasses\\gunpart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B45F8A7-BCE5-4667-ACA5-51AB4EB62062}|Right to Return Arms.csproj|c:\\users\\thbar\\onedrive\\desktop\\106-group-warehouseshooter\\right to return arms\\gunclasses\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B45F8A7-BCE5-4667-ACA5-51AB4EB62062}|Right to Return Arms.csproj|solutionrelative:gunclasses\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B45F8A7-BCE5-4667-ACA5-51AB4EB62062}|Right to Return Arms.csproj|c:\\users\\thbar\\onedrive\\desktop\\106-group-warehouseshooter\\right to return arms\\gunclasses\\genericgunupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B45F8A7-BCE5-4667-ACA5-51AB4EB62062}|Right to Return Arms.csproj|solutionrelative:gunclasses\\genericgunupgrade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B45F8A7-BCE5-4667-ACA5-51AB4EB62062}|Right to Return Arms.csproj|c:\\users\\thbar\\onedrive\\desktop\\106-group-warehouseshooter\\right to return arms\\gunclasses\\statmodifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B45F8A7-BCE5-4667-ACA5-51AB4EB62062}|Right to Return Arms.csproj|solutionrelative:gunclasses\\statmodifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8B45F8A7-BCE5-4667-ACA5-51AB4EB62062}|Right to Return Arms.csproj|c:\\users\\thbar\\onedrive\\desktop\\106-group-warehouseshooter\\right to return arms\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8B45F8A7-BCE5-4667-ACA5-51AB4EB62062}|Right to Return Arms.csproj|solutionrelative:game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,24 +34,86 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Gun.cs",
+              "DocumentMoniker": "C:\\Users\\thbar\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\GunClasses\\Gun.cs",
+              "RelativeDocumentMoniker": "GunClasses\\Gun.cs",
+              "ToolTip": "C:\\Users\\thbar\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\GunClasses\\Gun.cs",
+              "RelativeToolTip": "GunClasses\\Gun.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAADUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T23:00:36.292Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DebugFont.spritefont",
+              "DocumentMoniker": "C:\\Users\\thbar\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\Content\\DebugFont.spritefont",
+              "RelativeDocumentMoniker": "Content\\DebugFont.spritefont",
+              "ToolTip": "C:\\Users\\thbar\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\Content\\DebugFont.spritefont*",
+              "RelativeToolTip": "Content\\DebugFont.spritefont*",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-19T23:51:03.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GunPart.cs",
+              "DocumentMoniker": "C:\\Users\\thbar\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\GunClasses\\GunPart.cs",
+              "RelativeDocumentMoniker": "GunClasses\\GunPart.cs",
+              "ToolTip": "C:\\Users\\thbar\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\GunClasses\\GunPart.cs",
+              "RelativeToolTip": "GunClasses\\GunPart.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAiwEEAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T23:48:04.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GenericGunUpgrade.cs",
+              "DocumentMoniker": "C:\\Users\\thbar\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\GunClasses\\GenericGunUpgrade.cs",
+              "RelativeDocumentMoniker": "GunClasses\\GenericGunUpgrade.cs",
+              "ToolTip": "C:\\Users\\thbar\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\GunClasses\\GenericGunUpgrade.cs",
+              "RelativeToolTip": "GunClasses\\GenericGunUpgrade.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAiwCMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T23:47:40.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StatModifier.cs",
+              "DocumentMoniker": "C:\\Users\\thbar\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\GunClasses\\StatModifier.cs",
+              "RelativeDocumentMoniker": "GunClasses\\StatModifier.cs",
+              "ToolTip": "C:\\Users\\thbar\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\GunClasses\\StatModifier.cs",
+              "RelativeToolTip": "GunClasses\\StatModifier.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAD4vxcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T23:40:47.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Game1.cs",
               "DocumentMoniker": "C:\\Users\\thbar\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\Game1.cs",
               "RelativeDocumentMoniker": "Game1.cs",
               "ToolTip": "C:\\Users\\thbar\\OneDrive\\Desktop\\106-Group-WareHouseShooter\\Right to Return Arms\\Game1.cs",
               "RelativeToolTip": "Game1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAowEsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-06T16:57:10.431Z",
+              "WhenOpened": "2026-03-19T23:26:22.766Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Right_to_Return_Arms.Gun
+namespace Right_to_Return_Arms.GunClasses
 {
     /// <summary>
     /// A class representing a generic part that gives a small gun upgrade
@@ -26,6 +26,16 @@ namespace Right_to_Return_Arms.Gun
             _name = name;
             _description = description;
             _statModifier = statModifier;
+        }
+
+        public override string ToString()
+        {
+            string toString = "";
+
+            toString = $"{_name}, {_description}\n";
+            toString += "\t" + _statModifier.ToString();
+
+            return toString;
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Right_to_Return_Arms.Gun
+namespace Right_to_Return_Arms.GunClasses
 {
     /// <summary>
     /// A class representing the players Gun and it's upgrades
@@ -36,9 +36,25 @@ namespace Right_to_Return_Arms.Gun
             _genericGunUpgrades = genericGunUpgrades;
         }
 
-        public Bullet ShootBullet()
+        public override string ToString()
         {
-            return new Bullet();
+            return $"{_barrel.ToString()}\n" +
+                $"{_grip.ToString()}\n" +
+                $"{_stock.ToString()}\n" +
+                $"Generic Gun Upgrades:\n" +
+                $"{GunUpgradesToString()}";
+        }
+
+        private string GunUpgradesToString()
+        {
+            string upgradesString = "";
+
+            foreach (GenericGunUpgrade upgrade in _genericGunUpgrades)
+            {
+                upgradesString += "\n" + upgrade.ToString() + "\n";
+            }
+
+            return upgradesString;
         }
     }
 }
