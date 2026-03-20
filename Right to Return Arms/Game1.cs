@@ -186,6 +186,9 @@ namespace Right_to_Return_Arms
                     break;
                 case GameState.Pause:
                     // Overlaying dark screen
+                    player.Draw(_spriteBatch);
+                    wall.Draw(_spriteBatch);
+                    bulletManager.DrawBullets(_spriteBatch);
                     _spriteBatch.Draw(Content.Load<Texture2D>("Transparent Black Screen"),
                         new Vector2(0, 0), Color.White);
                     _menuBut.Draw(_spriteBatch);
