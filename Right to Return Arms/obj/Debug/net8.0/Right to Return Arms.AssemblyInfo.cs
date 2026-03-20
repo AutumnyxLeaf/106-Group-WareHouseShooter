@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Right to Return Arms")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d2bedfdd79bc8f4aba20f1fa35f2d523b7429ba")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edd8b9277495f36a972b7270d0f91fdb8d688c9e")]
->>>>>>> PlayerTesting
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+779cd27c255508abe4f7f1c2d6965a89360983f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Right to Return Arms")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Right to Return Arms")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
