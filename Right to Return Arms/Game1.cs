@@ -19,7 +19,6 @@ namespace Right_to_Return_Arms
         Game
     }
     
-    
     public class Game1 : Game
     {
         private GraphicsDeviceManager _graphics;
@@ -51,6 +50,18 @@ namespace Right_to_Return_Arms
 
         // End of temporary variables
 
+
+        // Player stuff
+        Player player;
+
+        // Managers
+        BulletManager bulletManager;
+
+        Texture2D bulletSprite;
+
+
+        GameObject wall;
+
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -61,6 +72,8 @@ namespace Right_to_Return_Arms
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
+
+            bulletManager = new BulletManager();
 
             base.Initialize();
         }
@@ -74,6 +87,16 @@ namespace Right_to_Return_Arms
             _highscoresBut = new Button(350, 200, Content.Load<Texture2D>("Highscore Button"));
             _closeGameBut = new Button(350, 300, Content.Load<Texture2D>("Exit Button"));
             _menuBut = new Button(50, 50, Content.Load<Texture2D>("Menu Button"));
+
+
+            // Player stuff
+            player = new Player(Content.Load<Texture2D>("Start Button"), new Rectangle(100, 100, 50, 50), CollisionTags.Player);
+            player.Speed = 5;
+
+            bulletSprite = Content.Load<Texture2D>("Menu Button");
+
+            wall = new GameObject(Content.Load<Texture2D>("Highscore Button"), new Rectangle(300, 0, 10, 400), CollisionTags.Wall);
+
         }
 
         protected override void Update(GameTime gameTime)
@@ -120,6 +143,21 @@ namespace Right_to_Return_Arms
                     {
                         _gameState = GameState.Pause;
                     }
+
+                    // Player stuff
+                    player.Update();
+
+                    if (SingleMouseClick())
+                    {
+                        bulletManager.AddBullet(new Bullet(bulletSprite, new Rectangle(player.transform.Location.X, player.transform.Location.Y, 10, 10)));
+                        bulletManager.GetLastBullet().VelocityDirection = new Vector2(ms.Position.X - player.transform.X, ms.Position.Y - player.transform.Y);
+                        bulletManager.GetLastBullet().Velocity *= 3;
+                    }
+
+                    wall.Update();
+                    bulletManager.UpdateBullets();
+                    bulletManager.CheckBulletCollisons(wall, CollisionTags.Wall);
+
                     break;
             }
             _previousMouseState = ms;
@@ -158,7 +196,9 @@ namespace Right_to_Return_Arms
                     _menuBut.Draw(_spriteBatch);
                     break;
                 case GameState.Game:
-                    
+                    player.Draw(_spriteBatch);
+                    wall.Draw(_spriteBatch);
+                    bulletManager.DrawBullets(_spriteBatch);
                     break;
             }
 
