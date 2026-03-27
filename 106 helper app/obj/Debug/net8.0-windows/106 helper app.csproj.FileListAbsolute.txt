@@ -1,0 +1,17 @@
+C:\Users\ixman\OneDrive\Desktop\starlight-cafe\106-Group-WareHouseShooter\106 helper app\bin\Debug\net8.0-windows\106 helper app.exe
+C:\Users\ixman\OneDrive\Desktop\starlight-cafe\106-Group-WareHouseShooter\106 helper app\bin\Debug\net8.0-windows\106 helper app.deps.json
+C:\Users\ixman\OneDrive\Desktop\starlight-cafe\106-Group-WareHouseShooter\106 helper app\bin\Debug\net8.0-windows\106 helper app.runtimeconfig.json
+C:\Users\ixman\OneDrive\Desktop\starlight-cafe\106-Group-WareHouseShooter\106 helper app\bin\Debug\net8.0-windows\106 helper app.dll
+C:\Users\ixman\OneDrive\Desktop\starlight-cafe\106-Group-WareHouseShooter\106 helper app\bin\Debug\net8.0-windows\106 helper app.pdb
+C:\Users\ixman\OneDrive\Desktop\starlight-cafe\106-Group-WareHouseShooter\106 helper app\obj\Debug\net8.0-windows\_106_helper_app.Form1.resources
+C:\Users\ixman\OneDrive\Desktop\starlight-cafe\106-Group-WareHouseShooter\106 helper app\obj\Debug\net8.0-windows\106 helper app.csproj.GenerateResource.cache
+C:\Users\ixman\OneDrive\Desktop\starlight-cafe\106-Group-WareHouseShooter\106 helper app\obj\Debug\net8.0-windows\106 helper app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ixman\OneDrive\Desktop\starlight-cafe\106-Group-WareHouseShooter\106 helper app\obj\Debug\net8.0-windows\106 helper app.AssemblyInfoInputs.cache
+C:\Users\ixman\OneDrive\Desktop\starlight-cafe\106-Group-WareHouseShooter\106 helper app\obj\Debug\net8.0-windows\106 helper app.AssemblyInfo.cs
+C:\Users\ixman\OneDrive\Desktop\starlight-cafe\106-Group-WareHouseShooter\106 helper app\obj\Debug\net8.0-windows\106 helper app.csproj.CoreCompileInputs.cache
+C:\Users\ixman\OneDrive\Desktop\starlight-cafe\106-Group-WareHouseShooter\106 helper app\obj\Debug\net8.0-windows\106 helper app.sourcelink.json
+C:\Users\ixman\OneDrive\Desktop\starlight-cafe\106-Group-WareHouseShooter\106 helper app\obj\Debug\net8.0-windows\106 helper app.dll
+C:\Users\ixman\OneDrive\Desktop\starlight-cafe\106-Group-WareHouseShooter\106 helper app\obj\Debug\net8.0-windows\refint\106 helper app.dll
+C:\Users\ixman\OneDrive\Desktop\starlight-cafe\106-Group-WareHouseShooter\106 helper app\obj\Debug\net8.0-windows\106 helper app.pdb
+C:\Users\ixman\OneDrive\Desktop\starlight-cafe\106-Group-WareHouseShooter\106 helper app\obj\Debug\net8.0-windows\106 helper app.genruntimeconfig.cache
+C:\Users\ixman\OneDrive\Desktop\starlight-cafe\106-Group-WareHouseShooter\106 helper app\obj\Debug\net8.0-windows\ref\106 helper app.dll
